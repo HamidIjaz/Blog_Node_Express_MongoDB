@@ -8,7 +8,7 @@ const app = express();
 
 // connect to mongoDB
 const dbUrl =
-  "mongodb+srv://hamid:3131@firstnodeblog.vykz7.mongodb.net/firstNodeBlog?retryWrites=true&w=majority";
+  "mongodb+srv://<useName>:<password>@firstnodeblog.vykz7.mongodb.net/<dataBaseName>?retryWrites=true&w=majority";
 mongoose
   .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000))
